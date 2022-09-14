@@ -1,0 +1,144 @@
+/* XL Device :1200px. */
+
+@media (min-width: 1200px) and (max-width: 1449px) {
+    .header__inner__blk {
+        padding-left: 60px;
+    }
+}
+
+
+/* LG Device :992px. */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .header__inner__blk {
+        padding-left: 60px;
+    }
+}
+
+
+/* MD Device :768px. */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .header__inner__blk {
+        padding-left: 60px;
+    }
+
+    .request__left__blk form {
+        max-width: 380px;
+    }
+
+    .request__left__blk label {
+        font-size: 17px;
+        line-height: 26px;
+        margin-bottom: 13px;
+    }
+
+    .request__left__blk input {
+        height: 32px;
+        padding: 6px 12px;
+        font-size: 16px;
+    }
+
+    .single__progress__item {
+        padding: 13px 20px;
+    }
+
+    .progress__left__blk span {
+        font-size: 13px;
+    }
+
+    .progress__left__blk p {
+        font-size: 14px;
+    }
+}
+
+
+/* SM Small Device :320px. */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .request__left__blk form {
+        max-width: 380px;
+    }
+
+    .request__left__blk label {
+        font-size: 15px;
+        line-height: 26px;
+        margin-bottom: 13px;
+    }
+
+    .request__left__blk input {
+        height: 32px;
+        padding: 6px 12px;
+        font-size: 16px;
+    }
+
+    .single__progress__item {
+        padding: 13px 20px;
+        flex-direction: column;
+    }
+
+    .progress__left__blk span {
+        font-size: 13px;
+        width: 150px;
+    }
+
+    .progress__left__blk p {
+        font-size: 14px;
+    }
+
+    .header__inner__blk {
+        flex-direction: column;
+        padding-left: 60px;
+    }
+
+    .header__left__blk {
+        margin-bottom: 15px;
+    }
+
+    .header__right__blk {
+        flex-direction: column;
+    }
+
+    .header__right__text {
+        margin-top: 15px;
+    }
+
+    .open__menu {
+        width: 60px;
+    }
+
+    .request__inner__blk {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .request__btn {
+        margin-top: 15px;
+    }
+
+    .request__area {
+        padding: 30px 0;
+    }
+    .single_pr__img {
+        margin-top: 15px;
+    }
+    .progress__inner__blk {
+        padding-bottom: 40px;
+    }
+}
+
+
+/* SM Small Device :550px. */
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .header__inner__blk {
+        flex-direction: unset;
+        padding-left: 60px;
+    }
+    .single__progress__item {
+        flex-direction: unset;
+    }
+    .single_pr__img {
+        margin-top: 0;
+    }
+}

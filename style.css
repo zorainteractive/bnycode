@@ -1,0 +1,412 @@
+/* Base CSS */
+@font-face {
+    font-family: 'FontsFree-Net-Akkurat';
+    src: url(../fonts/FontsFree-Net-Akkurat.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+a:focus {
+    outline: 0 solid
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    color: #07171D;
+}
+
+body {
+    color: #07171D;
+    font-weight: 400;
+    font-family: 'FontsFree-Net-Akkurat';
+
+}
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: none
+}
+
+a,
+button,
+input,
+textarea {
+    outline: none !important;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+/* ------------------------------ SINGLE PAGE START --------------------------- */
+.dropdown-toggle::after {
+    display: inline-block;
+    margin: 0;
+    border: 0;
+    background-image: url(../img/down__angle.svg);
+    content: '';
+    height: 20px;
+    width: 20px;
+    background-size: 100%;
+    right: 20px;
+    vertical-align: unset;
+    left: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+#dropdownMenuButton1 {
+    position: relative;
+    z-index: 1;
+    width: 230px;
+    background: #E3EBED;
+    border: 0;
+    border-radius: 6px;
+
+}
+
+.btn__wrap {
+    display: flex;
+    align-items: center;
+}
+
+.btn__img {
+    margin-right: 12px;
+}
+
+.btn__content span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #00485E;
+}
+
+.btn__content {
+    text-align: left;
+    position: relative;
+    top: -5px;
+}
+
+.btn__content h6 {
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #00485E;
+}
+
+.btn-check:focus+.btn-secondary,
+.btn-secondary:focus {
+    box-shadow: unset;
+}
+
+.dropdown-menu.show {
+    width: 230px;
+    border: 0;
+    background: #E3EBED;
+    padding: 10px;
+    border-radius: 0;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin-top: -5px !important;
+    box-shadow: 0px 9px 13px 0px rgba(138,138,138,0.41);
+    -webkit-box-shadow: 0px 9px 13px 0px rgba(138,138,138,0.41);
+    -moz-box-shadow: 0px 9px 13px 0px rgba(138,138,138,0.41);
+}
+
+.dropdown-menu.show li {
+    background: #7199A5;
+    margin-bottom: 5px;
+    transition: .3s all;
+    border: 1px solid #7199A5;
+}
+
+.dropdown-menu.show li a {
+    transition: .3s all;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+.dropdown-menu.show li a:hover {
+    color: #7199A5;
+}
+
+
+.header__area {
+    background: #00485E;
+    position: relative;
+    z-index: 1;
+    padding: 10px 0;
+}
+
+.header__inner__blk {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__left__blk h5 {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.header__right__blk {
+    display: flex;
+}
+
+.header__right__text {
+    margin-left: 45px;
+}
+
+.header__right__text h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.header__right__text h4 span {
+    font-weight: 800;
+}
+
+.open__menu {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 70px;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-right: 2px solid #fff;
+}
+
+/* ------------------------------ SINGLE PAGE END --------------------------- */
+
+
+/* ------------------------------ REQUEST AREA START --------------------------- */
+
+.request__inner__blk {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.request__left__blk label {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+    margin-bottom: 13px;
+}
+
+.request__left__blk form {
+    max-width: 458px;
+}
+
+.request__left__blk input {
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 6px;
+    height: 38px;
+    padding: 6px 12px;
+    font-size: 16px;
+}
+
+.request__area {
+    background: #E3EBED;
+    padding: 40px 0;
+    margin-bottom: 40px;
+}
+
+.request__btn a {
+    background: #5F5530;
+    border-radius: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    padding-bottom: 10px;
+    transition: .3s all;
+    border: 1px solid #5F5530;
+}
+
+.request__btn a:hover {
+    background: transparent;
+    color: #5F5530;
+}
+
+/* ------------------------------ REQUEST AREA END --------------------------- */
+
+
+/* ------------------------------ PROGRESS AREA START --------------------------- */
+
+.progress__list ul li {
+    display: inline-block;
+    margin-right: 26px;
+}
+
+.progress__list ul li a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    transition: .3s all;
+}
+.progress__list ul li a:hover {
+	color: #5F5530;
+}
+.progress__list ul li.active a {
+    font-weight: 700;
+    color: #000;
+}
+
+.progress__list {
+    position: relative;
+    z-index: 3;
+    padding-bottom: 12px;
+}
+
+.progress__list:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #CCCCCC;
+    content: '';
+    z-index: 1;
+}
+
+.progress__list:after {
+    position: absolute;
+    left: 0;
+    background: #040404;
+    height: 4px;
+    width: 3%;
+    content: '';
+    bottom: 0;
+    z-index: 2;
+}
+
+.single__progress__item {
+    background: #F3F3F3;
+    border: 2px solid #E9E8E8;
+    border-radius: 6px;
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 14px;
+}
+
+.progress__left__blk {
+    display: flex;
+    align-items: center;
+}
+
+.progress__left__blk span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: inline-block;
+    color: #000000;
+    width: 178px;
+}
+
+.progress__left__blk p {
+    margin: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.single_pr__img {
+    display: flex;
+}
+
+.single_pr__img a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 28px;
+    width: 28px;
+    background: #FFF;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+/* ------------------------------ PROGRESS AREA END --------------------------- */
